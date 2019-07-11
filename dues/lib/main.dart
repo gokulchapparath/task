@@ -79,15 +79,18 @@ class Duepage extends StatelessWidget {
                       // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        Container(
-                          width: 90.0,
-                          height: 90.0,
-                          decoration: new BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: new DecorationImage(
-                                fit: BoxFit.fill,
-                                image: new NetworkImage(
-                                    "https://cdn1.iconfinder.com/data/icons/banking-and-finance-35/64/Bank-fees-512.png")),
+                        Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Container(
+                            width: 90.0,
+                            height: 90.0,
+                            decoration: new BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: new NetworkImage(
+                                      "https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg")),
+                            ),
                           ),
                         ),
                         Container(
@@ -107,15 +110,18 @@ class Duepage extends StatelessWidget {
                       //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        Container(
-                          width: 90.0,
-                          height: 90.0,
-                          decoration: new BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: new DecorationImage(
-                                fit: BoxFit.fill,
-                                image: new NetworkImage(
-                                    "https://cdn3.iconfinder.com/data/icons/care-4/100/Fundraising-512.png")),
+                        Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Container(
+                            width: 90.0,
+                            height: 90.0,
+                            decoration: new BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: new NetworkImage(
+                                      "https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg")),
+                            ),
                           ),
                         ),
                         Container(
@@ -135,15 +141,18 @@ class Duepage extends StatelessWidget {
                       // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        Container(
-                          width: 90.0,
-                          height: 90.0,
-                          decoration: new BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: new DecorationImage(
-                                fit: BoxFit.fill,
-                                image: new NetworkImage(
-                                    "https://cdn4.iconfinder.com/data/icons/election-2/200/380-512.png")),
+                        Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Container(
+                            width: 90.0,
+                            height: 90.0,
+                            decoration: new BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: new NetworkImage(
+                                      "https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg")),
+                            ),
                           ),
                         ),
                         Container(
