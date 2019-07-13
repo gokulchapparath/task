@@ -5,6 +5,8 @@ class Duepage extends StatelessWidget {
     return Material(
       type: MaterialType.transparency,
       child: new Container(
+         height: double.infinity,
+                width: double.infinity,
         decoration: new BoxDecoration(color: Colors.deepOrange[300]),
         child: SingleChildScrollView(
           child: Column(
@@ -158,38 +160,42 @@ class Duepage extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                  padding: EdgeInsets.all(20.0),
-                  child: Container(
-                    height: 120.0,
-                    width: 350.0,
+            
+                  
+                  Container(
+                    height: 150,
+                    width: 400.0,
+                    child:Container(
+                      height: 100,
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: EdgeInsets.only(top:22.0,bottom: 15.0,left: 15.0,right: 15.0),
                       //decoration: new BoxDecoration(color:Colors.blue),
                       child: Card(
-                        child: Ink(
-                          color: Colors.white12,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
-                              Padding(
-                                padding: EdgeInsets.all(8.0),
-                                child: Column(
-                                  //mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Container(
-                                      child: Text(
+                   child: Ink(
+                     color: Colors.white54,
+                     child: Row(
+                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                       children: <Widget>[
+                         Column(
+                           mainAxisAlignment: MainAxisAlignment.start,
+                           crossAxisAlignment: CrossAxisAlignment.start,
+                           children: <Widget>[
+                             Padding(
+                               padding: EdgeInsets.all(5),
+                             ),
+                             Container(
+                               child: Text(
                                         'Your Payment is Due',
                                         style: TextStyle(
                                             fontSize: 16, color: Colors.black),
                                         textAlign: TextAlign.left,
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.all(8.0),
-                                      child: Container(
-                                        child: Text(
+                             ),
+                             Padding(
+                               padding: EdgeInsets.all(5),
+                             ),
+                             Container(
+                                child: Text(
                                           'Rs. 3999',
                                           style: TextStyle(
                                               fontSize: 22,
@@ -197,45 +203,41 @@ class Duepage extends StatelessWidget {
                                               fontWeight: FontWeight.w900),
                                           textAlign: TextAlign.left,
                                         ),
-                                      ),
-                                    ),
-                                    Container(
-                                      child: Text(
+                                      
+                             ),
+                             Padding(
+                               padding: EdgeInsets.all(5),
+                             ),
+                             Container(
+                               child: Text(
                                         'Due Date: 30 July 2019',
                                         style: TextStyle(
                                             fontSize: 16,
                                             color: Colors.black26),
                                         textAlign: TextAlign.left,
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Container(
+                             ),
+                           ],
+                         ),
+                         Container(
+                             child: RaisedButton(
+                           onPressed: () {},
+                           color: Colors.red,
+                           child: Text(
+                             'pay now',
+                             style: TextStyle(color: Colors.white),
+                           ),
+                           shape: new RoundedRectangleBorder(
+                               borderRadius: new BorderRadius.circular(30.0)),
+                         ))
+                       ],
+                     ),
+                   ),
+                 ),
 
-                                  //  crossAxisAlignment: CrossAxisAlignment.center,
-//children: <Widget>[
-                                  //Padding(
-                                  // padding: EdgeInsets.all(15.0),
-                                  child: new RaisedButton(
-                                      color: Colors.deepOrange[300],
-                                      child: new Text(
-                                        "Pay now",
-                                        style: TextStyle(color: Colors.white70),
-                                      ),
-                                      onPressed: () {},
-                                      shape: new RoundedRectangleBorder(
-                                          borderRadius:
-                                              new BorderRadius.circular(30.0)))
-                                  //)
-//],
-                                  ),
-                            ],
-                          ),
-                        ),
-                      ),
                     ),
-                  ))
+                    ),
+                  )
             ],
           ),
         ),
